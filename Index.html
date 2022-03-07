@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--Chipan-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/index/logo.png">
+        <title>Chipan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Page Loader开始 -->
+        <div id="page_loader">
+            <div class="loader">
+                <img src="images/index/loader.gif">
+            </div>
+        </div>
+        <!-- Page Loader结束 -->
+        <!-- Navigation开始 -->
+        <header id="header_background_color" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header_h1">
+                        <h1><a href="Index.html">Chipan</a></h1>
+                    </div>
+                    <input type="checkbox" id="active">
+                    <label for="active" class="menu-btn"><span></span></label>
+                    <label for="active" class="close"></label>
+                    <div class="header_nav">
+                        <nav id="menu">
+                            <ul>
+                                <li><a href="javascript:;" onclick="target_fix('section_home')">Home</a></li>
+                                <li><a href="javascript:;" onclick="target_fix('section_2')">Portfolio</a></li>
+                                <!-- <li><a href="javascript:;" onclick="target_fix('section_3')">section_3</a></li> -->
+                                <li><a href="javascript:;" onclick="target_fix('section_4')">Bio</a></li>
+                                <!-- <li><a href="javascript:;" onclick="target_fix('section_5')">section_5</a></li> -->
+                                <li><a href="javascript:;" onclick="target_fix('section_6')">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation结束 -->
+        <!-- Slider开始 -->
+        <section id="home" class="home">
+            <div id="section_home" class="target_fix"></div>
+            <div id="flexslider_height" class="flexslider">
+
+                <div class="left_arrow" onclick="fun_img_prev()">
+                    <span class="arrow left"></span>
+                </div>
+                <div class="right_arrow" onclick="fun_img_next()">
+                    <span class="arrow right"></span>
+                </div>
+                <div id="dots_btn" class="dots_btn">
+                    <span id="dot_1" class="dots dot_active" onclick="move_slider(1)"></span>
+                    <span id="dot_2" class="dots" onclick="move_slider(2)"></span>
+                    <span id="dot_3" class="dots" onclick="move_slider(3)"></span>
+                    <span id="dot_4" class="dots" onclick="move_slider(4)"></span>
+                    <span id="dot_5" class="dots" onclick="move_slider(5)"></span>
+                </div>
+
+
+
+                <div class="text_holder">
+                    <div class="container">
+                        <div class="big text_holder_center" style="visibility: hidden;"><p>Portfolio</p></div>
+                        <div class="small text_holder_center" style="visibility: hidden;"><p>Small Title</p></div>
+                        <div class="slider_btn text_holder_center"><a href="javascript:;" onclick="target_fix('section_2')">View More</a></div>
+                    </div>
+                </div>
+
+
+
+                <div id="img_holder_1" class="img_holder img_holder_active">
+                    <img src="images/index/banner_001.png">
+                </div>
+                <div id="img_holder_2" class="img_holder img_holder_hidden">
+                    <img src="images/index/banner_002.jpg">
+                </div>
+                <div id="img_holder_3" class="img_holder img_holder_hidden">
+                    <img src="images/index/banner_003.jpg">
+                </div>
+                <div id="img_holder_4" class="img_holder img_holder_hidden">
+                    <img src="images/index/banner_004.png">
+                </div>
+                <div id="img_holder_5" class="img_holder img_holder_hidden">
+                    <img src="images/index/banner_005.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- Slider结束 -->
+
+
+
+        <section class="section_2">
+            <div class="container">
+                <div id="section_2" class="target_fix"></div>
+                <div class="portfolio">
+                    <div class="tab"></div>
+                    <h2>Portfolio</h2>
+                    <div class="tab2"></div>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <div class="tab2"></div>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <div class="tab2"></div>
+                    <div class="section_2_btn">
+                        <a href="pages/Fantasy.html" class="s2_btn s2_effect" data-sm-link-text="CLICK" target="_blank"><span>View More</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_3">
+            <div class="container">
+                <div id="section_3" class="target_fix" ></div>
+                <!-- <div class="section_3">
+                    section_3
+                </div> -->
+            </div>
+        </section>
+
+        <section class="section_4">
+            <div class="container">
+                <div id="section_4" class="target_fix"></div>
+                <div class="bio">
+                    <div class="tab"></div>
+                    <h2>Bio</h2>
+                    <div class="tab2"></div>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <div class="tab2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_5">
+            <div class="container">
+                <div id="section_5" class="target_fix"></div>
+                <!-- <div class="section_5">
+                    section_5
+                </div> -->
+            </div>
+        </section>
+
+        <section class="section_6">
+            <div class="container">
+                <div id="section_6" class="target_fix"></div>
+                <div class="contact">
+                    <div class="tab"></div>
+                    <h2>Contact</h2>
+                    <div class="tab2"></div>
+                    <hr style="border: 0; background-color: #FFFF00; height: 1px;">
+                    <div class="tab2"></div>
+                    <p>Email: chixpan@outlook.com</p>
+                    <div class="tab2"></div>
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <label class="form_label" for="full-name"><p>Name:</p></label>
+                            <input class="form_input" type="text" name="name" id="full-name" placeholder="Name" required="">
+                            <div class="tab3"></div>
+                            <label class="form_label" for="email-address"><p>Email:</p></label>
+                            <input class="form_input" type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+                            <div class="tab3"></div>
+                            <label class="form_label" for="message"><p>Message:</p></label>
+                            <textarea class="form_input" rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
+                            <!-- <input class="form_input" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"> -->
+                        </fieldset>
+                        <div class="tab3"></div>
+                        <!-- <input type="submit" value="停用中"> -->
+                        <div class="section_6_btn"><a></a></div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="contact">
+                    <p>
+                        图片来源自网络，仅用于个人学习。<a href="pages/Reference.txt" target="_blank" style="color: red;">出处</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
