@@ -335,8 +335,9 @@ input[type="checkbox"]{
     text-align: center;
 }
 .section_2 h2{
-    font-size: 500%;
+    font-size: 5rem;
     font-family: fantasy;
+    word-break: break-all;
 }
 .section_2 .tab{
     height: 100px;
@@ -359,8 +360,9 @@ input[type="checkbox"]{
     text-align: center;
 }
 .section_4 h2{
-    font-size: 500%;
+    font-size: 5rem;
     font-family: fantasy;
+    word-break: break-all;
 }
 .section_4 .tab{
     height: 100px;
@@ -382,13 +384,18 @@ input[type="checkbox"]{
     line-height: normal;
     text-align: center;
 }
+.section_6 .contact{
+    text-align:center;
+}
 .section_6 h2{
-    font-size: 500%;
+    font-size: 5rem;
     font-family: fantasy;
+    word-break: break-all;
 }
 .section_6 p{
     font-family: fantasy;
-    font-size: 200%;
+    font-size: 2rem;
+    word-break: break-all;
 }
 .section_6 .tab{
     height: 80px;
@@ -516,54 +523,11 @@ input[type="checkbox"]{
     transform: translateY(0) scale(1,1);
 }
 /* section_2_btn结束 */
-/* section_6_btn开始 */
-.section_6_btn{
-    position: relative;
-    display: inline-flex;
-    width: 180px;
-    height: 55px;
-    margin: 0 15px;
-    perspective: 1000px;
-}
-.section_6_btn a{
-    font-size: 19px;
-    letter-spacing: 1px;
-    transform-style: preserve-3d;
-    transform: translateZ(-25px);
-    transition: transform .25s;
-    font-family: 'Montserrat', sans-serif;
-}
-.section_6_btn a:before,
-.section_6_btn a:after{
-    position: absolute;
-    content: "停用中";
-    height: 55px;
-    width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid black;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-.section_6_btn a:before{
-    color: #fff;
-    background: #000;
-    transform: rotateY(0deg) translateZ(25px);
-}
-.section_6_btn a:after{
-    color: #000;
-    transform: rotateX(90deg) translateZ(25px);
-}
-.section_6_btn a:hover{
-    transform: translateZ(-25px) rotateX(-90deg);
-}
-/* section_6_btn结束 */
 /* Button结束 */
 
 
-/* RWD */
-@media screen and (max-width: 768px){
+/* RWD 768px 1200px*/
+@media screen and (max-width: 1200px){
     /* Logo开始 */
     #header_background_color{
         background-color: transparent;
@@ -732,5 +696,28 @@ input[type="checkbox"]{
         transition-delay: .6s;
         transform: translateX(-100px);
     }
+
+    /* RWD文字开始 */
+    .section_2 h2{
+        font-size: 3rem;
+        font-family: fantasy;
+        word-break: break-all;
+    }
+    .section_4 h2{
+        font-size: 3rem;
+        font-family: fantasy;
+        word-break: break-all;
+    }
+    .section_6 h2{
+        font-size: 3rem;
+        font-family: fantasy;
+        word-break: break-all;
+    }
+    .section_6 p{
+        font-family: fantasy;
+        font-size: 1.5rem;
+        word-break: break-all;
+    }
+    /* RWD文字结束 */
 }
 /* RWD */
