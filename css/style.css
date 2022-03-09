@@ -71,7 +71,7 @@ html, body{
     width: 70%;
 }
 .header_nav li{
-    width: 15%;
+    width: 20%;
 }
 #menu{
     height: 100%;
@@ -339,11 +339,21 @@ input[type="checkbox"]{
     font-family: fantasy;
     word-break: break-all;
 }
+.img_section_2{
+    display: table-cell;
+    vertical-align: middle;
+}
+.img_section_2 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
 .section_2 .tab{
-    height: 100px;
+    height: 30px;
 }
 .section_2 .tab2{
-    height: 50px;
+    height: 10px;
 }
 .section_3{
     background-image: url("../images/index/img_section_3_5.jpg");
