@@ -38,7 +38,9 @@ html, body{
 /* Navigation开始 */
 /* Navigation开始 */
 /* Navigation开始 */
-@media screen and (min-width: 768px){
+
+/* RWD 768px 1200px*/
+@media screen and (min-width: 1200px){
 #header_background_color{
     background-color: transparent;
 }
