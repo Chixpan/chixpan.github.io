@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<!--Chipan-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="https://chixpan.github.io/images/index/logo.png">
+        <title>简历</title>
+        <style>
+            html, body{
+                border: 0;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            .container_header{
+                height: 100%;
+                width: 80%;
+                position: relative;
+                margin: 0 auto;
+            }
+            .container{
+                height: 100%;
+                width: 50%;
+                position: relative;
+                margin: 0 auto;
+            }
+            #header_background_color{
+                background-color: black;
+            }
+            .header{
+                font-size: 15px;
+                font-weight: bold;
+                line-height: normal;
+                position: fixed;
+                text-align: center;
+                width: 100%;
+                height: 100px;
+                z-index: 100;
+            }
+            .header_h1{
+                float: left;
+                width: 30%;
+            }
+            .header_h1 h1 a{
+                display: block;
+                color: #FFFFFF;
+                font-size: 200%;
+                text-decoration: none;
+                text-align: center;
+                line-height: 60px;
+            }
+            .header_nav{
+                float: left;
+                width: 70%;
+            }
+            .header_nav li{
+                width: 15%;
+            }
+            #menu{
+                width: 100%;
+                visibility: visible;
+            }
+            #menu ul{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            #menu ul li{
+                display: inline-block;
+                position: relative;
+            }
+            #menu ul li a{
+                display: block;
+                color: #FFFFFF;
+                font-size: x-large;
+                text-decoration: none;
+                text-align: center;
+                line-height: 80px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .target_fix{
+                position: relative;
+                top: -100px;
+                display: block;
+                visibility: hidden;
+            }
+            .section_text h2{
+                font-size: 2rem;
+                font-family: DFKai-sb;
+            }
+            .section_text p{
+                font-size: 1.5rem;
+                font-family: DFKai-sb;
+            }
+            .section_text li{
+                font-size: 1.5rem;
+                font-family: DFKai-sb;
+            }
+            .s1_link a:hover{
+                background-color: yellow;
+            }
+            .section_m{
+                background-image: url("https://chixpan.github.io/images/index/img_section_3_5.jpg");
+                background-color: #202020;
+                height: 250px; 
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .footer{
+                background-color: #1C1C1C;
+                height: 75px;
+                line-height: normal;
+                text-align: center;
+            }
+            .footer .container{
+                display: flex;
+            }
+            .footer .contact{
+                height: 100%;
+                width: 100%;
+            }
+            .footer p{
+                color: #FFFFFF;
+                margin-top: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation开始 -->
+        <header id="header_background_color" class="header">
+            <div class="container_header">
+                <div class="row">
+                    <div class="header_h1">
+                        <h1><a href="简历.html">Chipan</a></h1>
+                    </div>
+                    <div class="header_nav">
+                        <nav id="menu">
+                            <ul>
+                                <li><a href="javascript:;" onclick="target_fix('section_1')">个人信息</a></li>
+                                <li><a href="javascript:;" onclick="target_fix('section_2')">教育背景</a></li>
+                                <li><a href="javascript:;" onclick="target_fix('section_3')">项目经验</a></li>
+                                <li><a href="javascript:;" onclick="target_fix('section_4')">经历作品</a></li>
+                                <li><a href="javascript:;" onclick="target_fix('section_5')">自我描述</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation结束 -->
+        <div style="height: 100px;"></div>
+        <section class="section_1 section_text">
+            <div class="container">
+                <div id="section_1" class="target_fix"></div>
+                <div>
+                    <div style="height: 10px;"></div>
+                    <h2>个人信息</h2>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <p>姓&emsp;&emsp;名:&nbsp;郭语人</p>
+                    <p>性&emsp;&emsp;别:&nbsp;男</p>
+                    <p>学&emsp;&emsp;历:&nbsp;硕士</p>
+                    <p>邮&emsp;&emsp;箱:&nbsp;chixpan@outlook.com</p>
+                    <p class="s1_link">
+                        作品网站:&nbsp;<a href="https://chixpan.github.io/index.html" target="_blank" rel="noopener" style="text-decoration:none;color: blue;">https://chixpan.github.io/index.html</a>
+                    </p>
+                    <p>求职意向:&nbsp;任务策划、文案策划</p>
+                </div>
+                <div style="height: 50px;"></div>
+            </div>
+        </section>
+        <section class="section_m"></section>
+        <section class="section_2 section_text">
+            <div class="container">
+                <div id="section_2" class="target_fix"></div>
+                <div>
+                    <div style="height: 10px;"></div>
+                    <h2>教育背景</h2>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <p>学校名称:&nbsp;朝阳科技大学</p>
+                    <p>专业名称:&nbsp;资讯</p>
+                    <p>学&emsp;&emsp;历:&nbsp;硕士</p>
+                    <p>研究方向:&nbsp;虚拟实境、脑波、卷积神经网络</p>
+                </div>
+                <div style="height: 50px;"></div>
+            </div>
+        </section>
+        <section class="section_m"></section>
+        <section class="section_3 section_text">
+            <div class="container">
+                <div id="section_3" class="target_fix"></div>
+                <div>
+                    <div style="height: 10px;"></div>
+                    <h2>Unity项目经验</h2>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <p><b>恐怖游戏</b></p>
+                    <p>简介:&nbsp;使用VR设备游玩的恐怖解谜游戏，通过收集道具来解谜以向终点前进，亦可以使用手电筒以及枪械武器来协助通关。</p>
+                    <p>负责:&nbsp;场景设计、道具系统、对话系统、怪物AI</p>
+                    <p>
+                        心得:&nbsp;模仿半条命的项目，完成度虽然不如预期，但作为恐怖游戏的要素基本具备。
+                        在使用VR设备的情况下，其实还蛮可怕的，尤其是加上VR设备的3D音效后。
+                        最初计划使用Source引擎开发，后来改为使用Unity引擎。
+                        由于项目成员仅4人，大部份的场景模型来自于Unity商店，设计成恐怖游戏，本意也是为了掩饰场景模型不够精致的缺陷。
+                        得益于VR设备的强大代入感，恐怖游戏的优势极大地被放大。
+                        对话系统模仿RPG制作大师与视觉小说。
+                        美中不足的是怪物AI不够聪明，但这个缺陷同样被VR设备的代入感优势给掩盖。
+                    </p>
+                    <p><b>美术馆</b></p>
+                    <p>简介:&nbsp;使用虚拟实境技术实现连线教学与教育之应用。项目分为两个部份，VR美术馆以及VR绘画。客户端软件分为教师用与学生用，项目目的为实现线上、虚拟实境教学。</p>
+                    <p>负责:&nbsp;场景设计、对话系统、多人连线、手机客户端(Android)</p>
+                    <p>
+                        心得:&nbsp;恐怖游戏项目结束之后开启的项目，为教育部补助之项目，目的在于虚拟实境技术运用在教育上。
+                        由于是教育部的项目，此项目的建模工作需要独自完成，美术馆採用极简风设计，虽然我个人偏向喜欢华丽的、金光闪闪的、天花板有油画的美术馆。
+                        但对于主题在虚拟实境，以及项目成员不足的情况，极简风显然比较现实。
+                        VR美术馆能让老师带领学生参观这座虚拟美术馆，通过与物件的互动，了解到艺术品的详细背景。
+                        VR绘画则是模仿Tilt Brush的3D绘画软件。
+                        本项目也提供了手机VR的客户端，配合Cardboard之类的产品使用，能将智慧型手机替代VR设备。
+                    </p>
+                </div>
+                <div style="height: 50px;"></div>
+            </div>
+        </section>
+        <section class="section_m"></section>
+        <section class="section_4 section_text">
+            <div class="container">
+                <div id="section_4" class="target_fix"></div>
+                <div>
+                    <div style="height: 10px;"></div>
+                    <h2>游戏经历</h2>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <p>10年以上游戏经历，尤其热爱代入感高的开放世界RPG，如上古卷轴V、辐射4。</p>
+                    <p><b>上古卷轴V:</b><br>
+                        &emsp;&emsp;因为接触上古卷轴V而开始对设计游戏感到兴趣。
+                        西幻一直是我喜爱的题材，而上古卷轴的高自由度，极大地增加了代入感，让玩家感到身临其境。
+                        而弱主线任务、强支线任务的设计，极大程度的缓解了繁琐任务对玩家的压迫感，这让上古卷轴这款拥有大量任务内容的游戏，显得没那么可怕。
+                        玩家随时可以在进行主线任务与支线任务切换，不再需要主线任务一条路走到底，开地图、刷怪、解任务，而支线任务简直形同虚设。
+                        <br>
+                        &emsp;&emsp;上古卷轴V的支线任务地位丝毫不逊色于主线，我认为这与它的世界观设计理念有关。
+                        上古卷轴V的主线剧情，主要是关于最后龙裔的使命，但在整个上古卷轴世界中，龙裔其实只是世界构成的一小部份。
+                        如果说主线任务是为了服务上古卷轴V的主题，那么支线任务大概就是为了完善整个上古卷轴系列的世界观。
+                        与整个世界相比，龙裔的存在感便显得那么微不足道，弱主线任务、强支线任务的设计便显得十分高明。
+                        同时又因为上古卷轴V的主题是关于最后龙裔的故事，支线任务又与主线任务互相关联。
+                        <br>
+                        &emsp;&emsp;在上古卷轴V，主线任务虽然显得并没有那么急迫，但整个世界却又时刻的提醒着玩家，最后龙裔的使命。
+                        支线任务为玩家建构了一个丰富的世界，但玩家依然是以龙裔的身份看这个世界。
+                        龙裔的终点与目的地是清晰地，但设计师将走到终点的过程选择权交给了玩家。
+                        玩家既可以选择游历世界后再执行拯救世界的使命，亦或是拯救世界后，慢慢地游历自己拯救的世界。
+                        而这个选择的权力，极大地增强了玩家的代入感以及游戏的自由度，这也是我喜欢这款游戏的主因。
+                        在我看来，游戏的自由度不仅仅只是游戏中可互动物件的多寡，或是地图的大小，而是选择怎么玩游戏的权力。
+                    </p>
+                    <p><b>辐射4:</b><br>
+                        &emsp;&emsp;同为Bethesda的作品，在系统的设计上拥有许多与上古卷轴V相仿的特点。
+                        不过与上古卷轴V相比，辐射4的主线任务要更有存在感，与上古卷轴V的囚犯开局相异，辐射4的主角在游戏开始之前便有自己的名字、价值观与家庭。
+                        这意味着玩家在辐射4更多的是扮演这位预设的主角，而非像上古卷轴V的主角如同白纸一样，可以尽情的投射自己的特质到角色身上。
+                        这使得辐射4的主线任务急迫程度与节奏明显比上古卷轴V强烈。
+                        <br>
+                        &emsp;&emsp;辐射4同样具有丰富的支线任务，但它的精彩程度与相对于主线任务的独立性，明显的不如上古卷轴V。
+                        如果说上古卷轴V用丰富的支线任务强化了玩家的代入感，那么辐射4用的便是生存系统。
+                        上古卷轴V也拥有生存系统，即烹饪(生产)、睡觉、庄园建设等，但这些系统在上古卷轴V的存在感却没有在辐射4中强烈(但在MOD中达成了)。
+                        <br>
+                        &emsp;&emsp;辐射4描述了一个末日的世界，在这个世界里，生存是头等大事。
+                        收集垃圾，分解出有用的材料，是辐射4生存系统的核心。
+                        除此之外，生存模式的限制，让这个系统显得更为重要，也因此吸引了许多硬核玩家。
+                        在生存模式中，快速旅行是被禁止的，存檔机制也被限制，这使得活着走到存檔点成为了一件必须的任务。
+                        辐射4拥有大量的工坊地点，这些地点拥有庄园系统的特点，在简单模式中可能被忽视，但在生存模式却成为了必须，因为在村庄可以建立存檔点。
+                        <br>
+                        &emsp;&emsp;在辐射4，主线任务急迫了许多，但它的节奏被生存系统给限制住，玩家无法通过快速旅行抵达目的地打败坏人、完成任务。
+                        而是必须仔细的规划路线，在村庄与村庄之间建立补给线，生存成为了所有主线、支线任务的前提。
+                        生存这项任务，并不是设计师所赋予的，而是玩家自己赋予的，这个任务的提供者、执行者皆是玩家本身，如何进行、获得怎样的成果亦是玩家自己决定。
+                        对于许多辐射4的玩家来说，光是努力生存就有成就感，甚至不需要推任务剧情，只需要到处走走、捡捡垃圾，就能感到有趣。
+                        <br>
+                        &emsp;&emsp;但是在辐射76中，生存的难度简单许多，考虑到辐射76是一款多人联机游戏，禁止快速旅行惩罚玩家不太现实。
+                        因此在游戏后期变得较为倾向多人合作、PVP以及收集向，它变得比较倾向沙盒游戏，和朋友一起玩比较能感到有趣。
+                    </p>
+                    <p><b>单机游戏</b></p>
+                    <p>艾尔登法环、塞尔达传说旷野之息、辐射76、全境封锁、GTA5、骑马与砍杀、刺客教条、太阁立志传V、三国志11</p>
+                    <p><b>网络游戏</b></p>
+                    <p>我的世界、冒险岛、大航海时代online</p>
+                    <p><b>竞技游戏</b></p>
+                    <p>LOL(钻石)、CS、BF、Fortnite、炉石传说</p>
+                    <p><b>手机游戏</b></p>
+                    <p>少女前线(指挥官等级183，无氪)、原神(冒险等阶59，月卡)</p>
+                    <br>
+                    <h2>个人作品:</h2>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <p><b>简介:</b><br>
+                        &emsp;&emsp;伊利亚的世界是我个人设计的世界观，我尝试将自己喜欢的游戏模式融入到我的想象世界中。
+                        它是以我非常喜欢的史诗奇幻为题材，充满剑与魔法的世界。
+                        我的目标是建构一个完整的世界观，从历史、地理、文化、科技、生态，全方面完整的世界观。
+                        游戏的玩法在我的构想中主要分为五个部份。更详尽的内容可以参考作品链接。
+                    </p>
+                    <p class="s1_link">
+                        作品网站:&nbsp;<a href="https://chixpan.github.io/pages/Fantasy.html" target="_blank" rel="noopener" style="text-decoration:none;color: blue;">伊利亚的世界</a>
+                    </p>
+                    <p><b>剧情/任务系统:</b><br>
+                        &emsp;&emsp;剧情/任务系统是RPG游戏比较普遍的玩法，但在我理想中的设计，应该尽量淡化剧情/任务系统的存在感，避免玩家被此系统绑架，而影响到自由度。
+                        此系统提供的奖励主要是图鉴收集、等级、称号、稀有的纪念品或是无伤大雅的资源。
+                        它们不会直接的影响到玩家的练度，因此不喜欢看剧情的玩家可以选择无视。
+                        主线的头两章，探险者协会篇与王城篇则是例外，因为在设定中这两篇剧情仍然属于新手期，而且需要完成这两篇剧情，才能得到所有的基础技能与魔法。
+                        除了剧情任务，日常任务的奖励则与练度习习相关，为了避免影响自由度，这些任务会十分简短，类似于签到系统。
+                    </p>
+                    <p><b>大世界:</b><br>
+                        &emsp;&emsp;大世界是开放世界游戏的基石，它与剧情/任务系统互相配合构成伊利亚的世界观。
+                        除了主线剧情、支线剧情等任务系统，探险任务也是主要的玩法。
+                        探险任务是由探险者协会发布的悬赏任务，包括地理类探险、考古类探险、寻宝、生物发现等，这些丰富的发现物会散落在伊利亚大陆各处，等待玩家收集。
+                        除了剧情/任务，战斗系统与生存系统亦是大世界的重要构成。
+                    </p>
+                    <p><b>战斗系统:</b><br>
+                        &emsp;&emsp;战斗系统的方面，我非常喜欢上古卷轴与艾尔登法环的设计，可以自由的切换武器与魔法，通过搭配拥有更强的效果。
+                        PVE的配点系统会十分弹性，在游戏后可以水桶号。
+                        但PVP的配点则会有所限制，会被限制在50级(即脱离新手期的临界点)，以此来强化职业特性，但仍可以调整。
+                        除此之外还有生存系统，主要分为食物与水，延伸还有睡眠与疾病。
+                        在大世界环境，生存系统影响并不大，但饱食度高的情况下，角色会得到格外BUFF加成，即使完全不管也不会有DEBUFF。
+                        但在新世界的沙盒地图环境，生存系统的功能会被放大。
+                    </p>
+                    <p><b>航海系统:</b><br>
+                        &emsp;&emsp;考虑到世界观的庞大，一次性使用大世界地图呈现并不现实，因此需要分成数个区域逐个开启，既然陆上的连接被限制，透过海路来连接分散在大陆各地的主要城市，似乎比较合乎逻辑。
+                        除了作为交通工具，贸易系统也需要透过航海系统呈现，玩家也可以组建自己的船队，造船、雇用船员等。
+                        航海系统也有独特的战斗模式，即海战。
+                        海上世界也会有专属的生物与敌人，海怪与海盗等，玩家甚至可以攻击中立的NPC船队。
+                    </p>
+                    <p><b>新世界:</b><br>
+                        &emsp;&emsp;新世界在我的设想中，会是沙盒游戏的设计。
+                        在世界观设定中新世界指的是与伊利亚已知世界相对的未知世界，这是一场对未知世界的探险。
+                        游戏场景将分为固定地图与随机地图，固定地图是探险者的固定据点，而随机地图则是由系统随机生成，类似于我的世界。
+                        除了地图的生成，玩法也十分类似于我的世界，我将这个模式定位为连线休闲的游玩模式，属于偏向社交性的玩法。
+                        玩家可以在随机生成的地图采集资源，并将资源运送回固定据点，成功送回固定据点的资源可以透过贸易系统卖回伊利亚本土赚取差价。
+                        在这个系统的延伸下，甚至可以做出类似于逃离塔科夫的游戏模式。除此之外，这个模式也会放大生存系统的存在感。
+                    </p>
+                </div>
+                <div style="height: 50px;"></div>
+            </div>
+        </section>
+        <section class="section_m"></section>
+        <section class="section_5 section_text">
+            <div class="container">
+                <div id="section_5" class="target_fix"></div>
+                <div>
+                    <div style="height: 10px;"></div>
+                    <h2>自我描述</h2>
+                    <hr style="border: 0; background-color: #800080; height: 1px;">
+                    <p>
+                        &emsp;&emsp;热爱文化产业，相信游戏产业将会成为文化输出的主要力量。
+                        喜爱奇幻与科幻题材。
+                        游戏设计上受Bethesda的上古卷轴、辐射影响。
+                        期望能为中国的文化输出奉献一己之力。
+                    </p>
+                    <ul>
+                        <li>熟悉Unity引擎操作，具有代码基础;</li>
+                        <li>10年以上游戏经历，特别喜爱开放世界RPG，追求游戏的代入感;</li>
+                        <li>喜爱阅读，涉猎广泛。热爱中外历史以及自然科学;</li>
+                        <li>喜爱奇幻与科幻题材，并希望能在作品中强化科学细节与逻辑合理性;</li>
+                        <li>善于沟通，为人和蔼，责任心强;</li>
+                        <li>对游戏设计具备热忱;</li>
+                    </ul>
+                </div>
+                <div style="height: 50px;"></div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="contact">
+                    <p>
+                        图片来源自网络，仅用于个人学习。<a href="https://chixpan.github.io/pages/Reference.txt" target="_blank" rel="noopener" style="color: red;">出处</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script> 
+        function target_fix(target_fix_id){ 
+            document.getElementById(target_fix_id).scrollIntoView();
+        }
+        </script> 
+    </body>
+</html>
